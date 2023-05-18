@@ -17,24 +17,16 @@ var num2 =parseInt(window.prompt('coloque outro numero: '))
 var cod = parseInt(window.prompt('digite 1 (pra soma), 2 (pra multiplicação) ou 3(para divisão): ')) // questão 6
 
 
-if(cod ==1 ){
-    document.write( 'soma: ', num1 + num2)
-} else if (cod == 2){
-    document.write(' multiplicação: ', num1 * num2)
-} else if(cod == 3) {
-    document.write(' divisão:', num1/num2)
-} else {
-    document.write (`tente novamente`)
-}
+
 
  switch (cod) {
-    case (cod == 1):
+    case 1:
         document.write( 'soma: ', num1 + num2);
         break;
-    case (cod == 2):
+    case 2:
         document.write(' multiplicação: ', num1 * num2);
         break;
-    case (cod == 3) :
+    case 3 :
         document.write(' divisão:', num1/num2)
         break;
  }

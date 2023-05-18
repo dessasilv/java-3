@@ -1,7 +1,7 @@
 var nome = window.prompt('nome do aluno: ');
-var nota1 = parseInt(window.prompt('primeira nota: '))
-var nota2 = parseInt(window.prompt('segunda nota: '))
-var nota3 = parseInt(window.prompt('terceira nota'))
+var nota1 = Number(window.prompt('primeira nota: '))
+var nota2 = Number(window.prompt('segunda nota: '))
+var nota3 = Number(window.prompt('terceira nota'))
 
 var media = ((nota1 + nota2 + nota3)/3)//questão 5
 
@@ -10,9 +10,9 @@ var num2 =parseInt(window.prompt('coloque outro numero: '))
 var cod = parseInt(window.prompt('digite 1, 2 ou 3: ')) // questão 6
 
 if(media >= 8){
-    document.write(' você foi aprovado, sua media é: ', media)
+    window.alert(`você foi aprovado, sua media é:  ${media}`)
 } else{
-    document.write(' você foi reprovado, sua media foi: ', media)
+    window.alert(`você foi reprovado, sua media é:  ${media}`)
 }
 
 
